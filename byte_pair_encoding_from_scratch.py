@@ -97,4 +97,3 @@ L_bpe = total_tokens(curr_vocab)
 compression_ratio = L_bpe / L_char
 compression_gain = 1 - compression_ratio
 print(compression_gain)
-
