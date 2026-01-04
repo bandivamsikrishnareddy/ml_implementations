@@ -1,13 +1,13 @@
 # Unigram Language Model Tokenizer — from scratch (hard EM)
 
 import math
-from ml_chores.corpus_for_tokenizations import load_corpus
+from corpus_for_tokenizations import load_corpus
 corpus = load_corpus()
 
 max_sub_len = 10
 end_marker = "</w>"
 epsilon = 1e-8
-num_iters = 100
+num_iters = 10
 
 # -----------------------------
 # 2. Build initial vocabulary
@@ -143,4 +143,4 @@ def tokenize(word):
 # 6. Example
 # -----------------------------
 print(tokenize("vamsikrishna"))
-
+print(token_prob)
